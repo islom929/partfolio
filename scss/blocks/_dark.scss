@@ -1,0 +1,87 @@
+// TODO DARK
+
+.dark {
+  background-color: rgb(25, 25, 25);
+
+  .nav {
+  background-color: $color-dark;
+
+    .nav__logo svg {
+      color: #fff;
+
+      &:hover {
+        color: $color-light-blue;
+      }
+    }
+  }
+
+
+  .hero-left__info-box{
+    color: #fff;
+  }
+
+  .nav__link {
+    color: #fff;
+
+    &:hover {
+      color: $color-light-blue;
+    }
+  }
+
+  .hero-left__link:hover {
+    svg {
+      fill: #fff !important;
+    }
+  }
+
+  .hero-right__code {
+    background-color:$color-dark ;
+
+    pre {
+      color:#fff;
+    }
+
+    .hero-right__list-color {
+      background-color:$color-dark ;
+    }
+  }
+
+  .hero-right__btn--blue{
+    background-color: #F8F8F8;
+    border-color: rgb(196, 196, 196);
+  }
+
+  .favourite__title, .about__title, .skills__title, .projects__title {
+    color: #fff;
+  }
+
+  .favourite__item {
+    background-color: $color-dark;
+
+    .favourite__text-name,.favourite__text-about {
+      color: #fff;
+    }
+  }
+
+.about-bottom__item {
+  background-color: $color-dark;
+}
+
+.about-bottom__text {
+  color: $color-light;
+}
+
+.about-bottom__name {
+  color: $color-light;
+}
+
+.language__text {
+  color: rgb(92, 92, 92);
+}
+
+
+.bootstrap-icon path:last-child{
+  fill: $color-heavy-dark;
+}
+
+}

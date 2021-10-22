@@ -1,0 +1,83 @@
+.pink {
+
+  .main {
+    background-image: url("../../img/img-bg-pink.svg");
+  }
+
+  .nav__logo, .hero-left__item{
+    svg{
+      color: $color-heavy-pink !important;
+      fill: $color-heavy-pink !important;
+    }
+
+    &:hover svg{
+      color: $color-light-pink !important;
+      fill: $color-light-pink !important;
+    }
+  }
+
+  .nav__link {
+    color: $color-heavy-pink;
+
+    &:hover {
+      color: $color-light-pink;
+    }
+  }
+
+  #toggler{
+
+    .layer {
+      background-color: $color-light-pink;
+    }
+
+    .knobs:before {
+      background-color: $color-heavy-pink;
+    }
+
+    .checkbox:checked + .knobs:before {
+      background-color:$color-heavy-pink;
+    }
+  }
+
+  .favourite__title, .favourite__text-name, .about__title, .skills__title{
+    color: $color-heavy-pink;
+  }
+
+  .hero-left__resume {
+    color: $color-light-pink;
+    background: $color-heavy-pink;
+  }
+
+  .hero-right__code, .about-bottom__item {
+    background: $color-light-pink;
+
+    pre, .about-bottom__text, .about-bottom__name {
+      color: $color-heavy-pink;
+    }
+
+    .hero-right__list-color {
+      background-color: $color-light-pink;
+    }
+  }
+
+  .favourite-img-top {
+    background-color: $color-light-pink;
+
+    svg{
+      color: $color-heavy-pink;
+    }
+  }
+
+  .about__bg {
+    background-image: linear-gradient(134deg, #f5a69e 0%, $color-heavy-pink 89%);
+  }
+
+  .skills__icons svg {
+    color: $color-heavy-pink;
+  }
+
+  .language__text {
+    color: rgba(169, 144, 134, 0.975);
+  }
+
+}

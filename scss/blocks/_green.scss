@@ -1,0 +1,83 @@
+.green {
+
+  .main {
+    background-image: url("../../img/img-bg-green.svg");
+  }
+
+  .nav__logo, .hero-left__item{
+    svg{
+      color: $color-heavy-green !important;
+      fill: $color-heavy-green !important;
+    }
+
+    &:hover svg{
+      color: $color-light-green !important;
+      fill: $color-light-green !important;
+    }
+  }
+
+  .nav__link {
+    color: $color-heavy-green;
+
+    &:hover {
+      color: $color-light-green;
+    }
+  }
+
+  #toggler{
+
+    .layer {
+      background-color: $color-light-green;
+    }
+
+    .knobs:before {
+      background-color: $color-heavy-green;
+    }
+
+    .checkbox:checked + .knobs:before {
+      background-color:$color-heavy-green;
+    }
+  }
+
+  .favourite__title, .favourite__text-name ,.about__title, .skills__title{
+    color: $color-heavy-green;
+  }
+
+  .hero-left__resume {
+    color: $color-light-green;
+    background: $color-heavy-green;
+  }
+
+  .hero-right__code, .about-bottom__item {
+    background: $color-light-green;
+
+    pre, .about-bottom__text, .about-bottom__name {
+      color: $color-heavy-green;
+    }
+
+    .hero-right__list-color {
+      background-color: $color-light-green;
+    }
+  }
+
+  .favourite-img-top {
+    background-color: $color-light-green;
+
+    svg{
+      color: $color-heavy-green;
+    }
+  }
+
+  .about__bg {
+    background-image: linear-gradient(134deg, #cee8ac 0%, $color-heavy-green 89%);
+  }
+
+  .skills__icons svg {
+    color: $color-heavy-green;
+  }
+
+  .language__text {
+    color: rgba(145, 177, 100, 0.7);
+  }
+
+}

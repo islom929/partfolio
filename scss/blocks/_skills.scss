@@ -1,0 +1,19 @@
+// TODO SKILLS
+
+.skills__title, .projects__title {
+  margin-bottom: 100px;
+}
+
+.skills__icons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  svg {
+    width: 76px ;
+    height: 76px;
+    color: $color-heavy-blue;
+  }
+
+}

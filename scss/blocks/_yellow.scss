@@ -1,0 +1,83 @@
+.yellow {
+
+  .main {
+    background-image: url("../../img/img-bg-yellow.svg");
+  }
+
+  .nav__logo, .hero-left__item{
+    svg{
+      color: $color-heavy-yellow !important;
+      fill: $color-heavy-yellow !important;
+    }
+
+    &:hover svg{
+      color: $color-light-yellow !important;
+      fill: $color-light-yellow !important;
+    }
+  }
+
+  .nav__link {
+    color: $color-heavy-yellow;
+
+    &:hover {
+      color: $color-light-yellow;
+    }
+  }
+
+  #toggler{
+
+    .layer {
+      background-color: $color-light-yellow;
+    }
+
+    .knobs:before {
+      background-color: $color-heavy-yellow;
+    }
+
+    .checkbox:checked + .knobs:before {
+      background-color:$color-heavy-yellow;
+    }
+  }
+
+  .favourite__title, .favourite__text-name, .about__title, .skills__title {
+    color: $color-heavy-yellow;
+  }
+
+  .hero-left__resume {
+    color: $color-light-yellow;
+    background: $color-heavy-yellow;
+  }
+
+  .hero-right__code, .about-bottom__item {
+    background: $color-light-yellow;
+
+    pre, .about-bottom__text, .about-bottom__name {
+      color: $color-heavy-yellow;
+    }
+
+    .hero-right__list-color {
+      background-color: $color-light-yellow;
+    }
+  }
+
+  .favourite-img-top {
+    background-color: $color-light-yellow;
+
+    svg{
+      color: $color-heavy-yellow;
+    }
+  }
+
+  .about__bg {
+    background-image: linear-gradient(134deg, #ffdd78 0%, #f9bc53 89%);
+  }
+
+  .skills__icons svg {
+    color: $color-heavy-yellow;
+  }
+
+  .language__text {
+    color: rgba(188, 184, 155, 0.9);
+  }
+
+}

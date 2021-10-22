@@ -1,0 +1,72 @@
+/* TODO ABOUT  */
+
+.about__title {
+  margin: 100px 0;
+}
+
+.about__bg {
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  width: 100%;
+  min-height: 500px;
+  background-image: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
+  transform: skewY(-3.5deg);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.about-top {
+  margin-top: 200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-top__img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  margin-right: 20%;
+  border: 3px solid $color-light;
+}
+
+.about-top__text {
+  color: $color-light;
+  font-size: 16px;
+  margin-top: 0px;
+  line-height: 150%;
+}
+
+.about-bottom {
+  margin-top: 65px;
+}
+
+.about-bottom__item {
+  position: relative;
+  padding: 20px;
+  padding-bottom: 30px;
+  margin: 20px 10px;
+  border-radius: 10px;
+  min-width: 20%;
+  height: 130px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  background-color: $color-light;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.about-bottom__text {
+  font-size: 16px;
+  line-height: 150%;
+  color: rgb(109, 131, 242);
+}
+
+.about-bottom__name {
+  font-size: 14px;
+  font-weight: 300;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: rgb(109, 131, 242);
+}

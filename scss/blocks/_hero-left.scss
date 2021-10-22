@@ -1,0 +1,54 @@
+/* TODO HERO-LEFT */
+
+.hero-left__greeting {
+  font-weight: 300;
+  font-size: 20px;
+  margin: 0;
+}
+
+.hero-left__name {
+  margin-top: -4px;
+  margin-bottom: -4px;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.hero-left__about {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.hero-left__resume {
+  display: inline-block;
+  margin: 30px 0;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  background-image: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
+  color: rgb(248, 248, 248);
+  cursor: pointer;
+  transition-duration: 0.2s;
+  font-size: 12px;
+  padding: 12px;
+  border-radius: 5px;
+
+  &:hover {
+    color: rgb(248, 248, 248);
+    background-image: linear-gradient(99deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 130%);
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+    text-decoration: none;
+  }
+}
+
+.hero-left__link {
+
+ svg {
+  fill: rgb(109, 131, 242);
+  width: 24px;
+  height: 24px;
+ }
+  &:hover svg {
+  fill: #383838 !important;
+  }
+}

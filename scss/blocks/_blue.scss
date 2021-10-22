@@ -1,0 +1,56 @@
+.blue {
+
+  .main {
+    background-image: url("../../img/img-hero-bg.svg");
+  }
+
+  .nav__logo, .hero-left__item{
+    svg{
+      color: $color-light-blue !important;
+      fill: $color-light-blue !important;
+    }
+
+    &:hover svg{
+      color: $color-dark !important;
+      fill: $color-dark !important;
+    }
+  }
+
+  .nav__link {
+    color: $color-light-blue;
+
+    &:hover {
+      color: $color-dark;
+    }
+  }
+
+  .hero-left__resume {
+    background: $color-light-blue;
+    color: #fff;
+  }
+
+  .hero-right__code {
+    background-color: rgb(248, 248, 248);
+
+    pre {
+      color: $color-light-blue;
+    }
+
+    .hero-right__list-color {
+      background-color: rgb(248, 248, 248);
+    }
+  }
+
+  .about__bg {
+    background-image: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
+  }
+
+  .favourite-img-top {
+    background-color: $color-light-blue;
+
+    svg{
+      color: #fff;
+    }
+  }
+
+}
