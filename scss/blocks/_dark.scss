@@ -79,9 +79,22 @@
   color: rgb(92, 92, 92);
 }
 
-
 .bootstrap-icon path:last-child{
   fill: $color-heavy-dark;
+}
+
+@include breakpoint-down(700px) {
+  .nav {
+    background-color: transparent;
+  }
+
+  .nav__sun {
+    display: block;
+  }
+
+  .nav__moon {
+    display: none;
+  }
 }
 
 }

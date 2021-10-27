@@ -1,7 +1,10 @@
-
 const body = document.getElementById("body");
+let navIcon = document.querySelector('.nav__icon');
 
 
+// navIcon.addEventListener('click', function() {
+//   navIcon.classList.toggle("open");
+// })
 
 // console.log();
 var typed = new Typed("#example", {
@@ -17,9 +20,12 @@ var typed = new Typed("#example", {
 
 window.addEventListener('scroll', function() {
   document.querySelector('.hero__nav').classList.add("hero__nav--scrolled");
-  
 });
 
+function navMenu () {
+  body.querySelector("header").classList.toggle("nav__menu")
+  navIcon.classList.toggle("open__icon");
+}
 
 function changeColorDark () {
   body.classList.toggle("dark");
@@ -33,7 +39,6 @@ function changeColorWhite () {
   body.classList.remove("blue");
   body.classList.remove("yellow");
   body.classList.remove("green");
-  body.classList.add("white");
 }
 
 function changeColorBlue () {
@@ -42,7 +47,6 @@ function changeColorBlue () {
   body.classList.remove("gray");
   body.classList.remove("yellow");
   body.classList.remove("green");
-  body.classList.add("blue");
 }
 
 function changeColorPink () {

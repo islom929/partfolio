@@ -1,8 +1,7 @@
 /* TODO NAV */
 
 .nav {
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding: 13px 0 !important;
   position: fixed;
   left: 0;
   right: 0;
@@ -12,6 +11,7 @@
   width: 100vw;
   background-color: rgb(248, 248, 248);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
+
 }
 
 .nav__logo {
@@ -27,7 +27,7 @@
 }
 
 .nav__list {
-  margin-right: 30px;
+  margin-right: 2.5%;
   margin-bottom: 0;
 }
 
@@ -123,4 +123,8 @@
   .layer {
     transition: 0.3s ease all;
   }
+}
+
+.nav__btn--mode, .nav__btn--burger {
+  display: none;
 }
