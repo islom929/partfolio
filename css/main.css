@@ -438,7 +438,7 @@ body {
   top: 0;
   z-index: 99;
   height: 60px;
-  width: 100vw;
+  width: 100%;
   background-color: #f8f8f8;
   -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
           box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
@@ -556,6 +556,10 @@ body {
 
 .nav__btn--mode, .nav__btn--burger {
   display: none;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .hero {
@@ -987,7 +991,7 @@ body {
     -webkit-transform: scale(1.012);
             transform: scale(1.012);
   }
-  i .favourite-img-top {
+  .favourite-img-top {
     margin-top: 10px;
     width: 115px;
     height: 115px;
@@ -1144,7 +1148,7 @@ body {
 @media only screen and (max-width: 700px) {
   .nav {
     position: fixed;
-    right: 60px;
+    right: 25px;
     top: auto;
     left: auto;
     bottom: 60px;
