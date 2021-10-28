@@ -1,0 +1,28 @@
+.footer {
+  z-index: 10;
+  position: relative;
+  // top: 50%;
+  bottom: 0;
+  width: 100%;
+  padding: 10px auto;
+  background: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
+}
+
+.footer__logo {
+  svg{
+    width: 35px;
+    height: 35px;
+    color: #C7D0FF;
+  }
+
+  &:hover svg {
+    color: rgb(56, 56, 56);
+  }
+}
+
+.footer__text {
+  font-size: 1rem;
+  line-height: 35px;
+  color: white;
+  margin-bottom: 0;
+}

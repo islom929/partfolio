@@ -6,21 +6,6 @@ let navIcon = document.querySelector('.nav__icon');
 //   navIcon.classList.toggle("open");
 // })
 
-// console.log();
-var typed = new Typed("#example", {
-  strings: [
-  "Islom",
-  "a Web-Developer",
-  "a Freelancer"
-  ],
-  typeSpeed: 90,
-  backspaceSpeed: 50,
-  loop:true
-});
-
-window.addEventListener('scroll', function() {
-  document.querySelector('.hero__nav').classList.add("hero__nav--scrolled");
-});
 
 function navMenu () {
   body.querySelector("header").classList.toggle("nav__menu")
