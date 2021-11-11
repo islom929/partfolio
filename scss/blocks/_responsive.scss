@@ -76,6 +76,11 @@
   .about-bottom__item {
     height: 165px;
   }
+
+  .projects__item img {
+    width: 220px;
+    height: 220px;
+  }
 }
 
 @include breakpoint-down(800px) {
@@ -89,6 +94,11 @@
     width: 100% !important;
     flex-grow: 0;
     flex-basis: auto;
+  }
+
+  .projects__item img {
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -364,6 +374,19 @@
   .about-bottom {
     margin-top: 40px;
   }
+
+  .projects__list {
+    flex-wrap: wrap;
+
+    li:last-child {
+      margin-top: 10px;
+    }
+  }
+
+  .projects__item img {
+    width: 270px;
+    height: 270px;
+  }
 }
 
 @include breakpoint-down(600px) {
@@ -449,6 +472,11 @@
   .skills__icons svg{
     width: 66px;
     height: 66px;
+  }
+
+  .projects__item img {
+    width: 210px;
+    height: 210px;
   }
 }
 
@@ -664,9 +692,24 @@
   .telegram-1 {
     transform: scale(1.2);
   }
+
+  .projects__list {
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    li:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+
+  .projects__item img {
+    width: 300px;
+    height: 300px;
+  }
+
 }
 
-@include breakpoint-down(480px) {
+@include breakpoint-down(400px) {
 
   .favourite__title, .about__title, .skills__title, .projects__title {
     margin-top: 60px;

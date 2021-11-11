@@ -978,13 +978,82 @@ body {
   font-size: 13px;
 }
 
-.footer {
-  z-index: 10;
+.projects {
+  margin-bottom: 50px;
+}
+
+.projects__list {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects__item {
   position: relative;
-  bottom: 0;
-  width: 100%;
-  padding: 10px auto;
+}
+
+.projects__item img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid #6d83f2;
+  border-radius: 14px;
+}
+
+.projects__item-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 3px 6px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 3px;
+  right: 3px;
+}
+
+.projects__item-box span {
+  width: 23px !important;
+  height: 23px !important;
+  color: #6d83f2;
+  margin: 0 3px;
+}
+
+.project__item--destop svg {
+  width: 25px;
+  height: 25px;
+}
+
+.project__item--tablet svg {
+  width: 22px;
+  height: 22px;
+}
+
+.project__item--mobile svg {
+  width: 21px;
+  height: 22px;
+}
+
+.projects__mobile .projects__item-box {
+  padding-right: 0;
+}
+
+.projects__mobile .projects__item-box .project__item--mobile {
+  margin-left: -3px;
+  margin-right: 1.5px;
+}
+
+.footer {
   background: linear-gradient(134deg, #6a98f0 0%, #4961dc 99%);
+  width: 100%;
+  margin-top: 100px;
+  padding: 10px auto;
 }
 
 .footer__logo svg {
@@ -1070,6 +1139,10 @@ body {
   .about-bottom__item {
     height: 165px;
   }
+  .projects__item img {
+    width: 220px;
+    height: 220px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1085,6 +1158,10 @@ body {
             flex-grow: 0;
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+  }
+  .projects__item img {
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -1365,6 +1442,17 @@ body {
   .about-bottom {
     margin-top: 40px;
   }
+  .projects__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .projects__list li:last-child {
+    margin-top: 10px;
+  }
+  .projects__item img {
+    width: 270px;
+    height: 270px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1440,6 +1528,10 @@ body {
   .skills__icons svg {
     width: 66px;
     height: 66px;
+  }
+  .projects__item img {
+    width: 210px;
+    height: 210px;
   }
 }
 
@@ -1618,9 +1710,24 @@ body {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
+  .projects__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects__list li:not(:first-child) {
+    margin-top: 10px;
+  }
+  .projects__item img {
+    width: 300px;
+    height: 300px;
+  }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 400px) {
   .favourite__title, .about__title, .skills__title, .projects__title {
     margin-top: 60px;
     margin-bottom: 25px;
@@ -1805,7 +1912,7 @@ body {
   background-color: #dd7564;
 }
 
-.pink .favourite__title, .pink .favourite__text-name, .pink .about__title, .pink .skills__title {
+.pink .favourite__title, .pink .favourite__text-name, .pink .about__title, .pink .skills__title, .pink .projects__title {
   color: #dd7564;
 }
 
@@ -1912,7 +2019,7 @@ body {
   background-color: #c5d0dd;
 }
 
-.gray .favourite__title, .gray .about__title, .gray .skills__title {
+.gray .favourite__title, .gray .about__title, .gray .skills__title, .gray .projects__title {
   color: #c5d0dd;
 }
 
@@ -1989,7 +2096,7 @@ body {
   background-color: #ffab19;
 }
 
-.yellow .favourite__title, .yellow .favourite__text-name, .yellow .about__title, .yellow .skills__title {
+.yellow .favourite__title, .yellow .favourite__text-name, .yellow .about__title, .yellow .skills__title, .yellow .projects__title {
   color: #ffab19;
 }
 
@@ -2079,7 +2186,7 @@ body {
   background-color: #1aac18;
 }
 
-.green .favourite__title, .green .favourite__text-name, .green .about__title, .green .skills__title {
+.green .favourite__title, .green .favourite__text-name, .green .about__title, .green .skills__title, .green .projects__title {
   color: #1aac18;
 }
 

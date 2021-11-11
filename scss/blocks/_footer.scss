@@ -1,11 +1,8 @@
 .footer {
-  z-index: 10;
-  position: relative;
-  // top: 50%;
-  bottom: 0;
-  width: 100%;
-  padding: 10px auto;
   background: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
+  width: 100%;
+  margin-top: 100px;
+  padding: 10px auto;
 }
 
 .footer__logo {
