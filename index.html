@@ -289,32 +289,45 @@
     <h2 class="projects__title">My Projects</h2>
 
     <ul class="projects__list list-unstyled d-flex">
-      <li class="projects__item projects__desktop"><img src="img/img-desktop.jpeg" alt="desktop img" width="200" height="200">
-      <div class="projects__item-box">
-        <span class="project__item--destop">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2H0c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2h-4zM4 5h16v11H4V5zm8 14c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/></svg>
-        </span>
-      </div></li>
-      <li class="projects__item projects__tablet" ><img src="img/img-tablet.jpeg" alt="desktop img" width="200" height="200">
-        <div class="projects__item-box">
-          <span class="project__item--destop">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2H0c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2h-4zM4 5h16v11H4V5zm8 14c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/></svg>
-          </span>
-          <span class="project__item--tablet">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M18.5 0h-14C3.12 0 2 1.12 2 2.5v19C2 22.88 3.12 24 4.5 24h14c1.38 0 2.5-1.12 2.5-2.5v-19C21 1.12 19.88 0 18.5 0zm-7 23c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm7.5-4H4V3h15v16z"/></svg>
-          </span>
-        </div></li>
-      <li class="projects__item projects__mobile"><img src="img/img-mobile.jpeg" alt="desktop img" width="200" height="200">
-        <div class="projects__item-box">
-          <span class="project__item--destop">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2H0c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2h-4zM4 5h16v11H4V5zm8 14c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/></svg>
-          </span>
-          <span class="project__item--tablet">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M18.5 0h-14C3.12 0 2 1.12 2 2.5v19C2 22.88 3.12 24 4.5 24h14c1.38 0 2.5-1.12 2.5-2.5v-19C21 1.12 19.88 0 18.5 0zm-7 23c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm7.5-4H4V3h15v16z"/></svg>
-          </span>
-           <span class="project__item--mobile">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/></svg>
-           </span></div></li>
+      <li class="projects__item projects__desktop">
+        <button type="button" class="projects__btn border-0" data-toggle="modal" data-target="#desktopModal">
+          <img src="img/img-desktop.jpeg" alt="desktop img" width="200" height="200">
+          <div class="projects__item-box">
+            <span class="project__item--destop">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2H0c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2h-4zM4 5h16v11H4V5zm8 14c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/></svg>
+            </span>
+          </div>
+        </button>
+      </li>
+      <li class="projects__item projects__tablet" >
+        <button type="button" class="projects__btn border-0" data-toggle="modal" data-target="#tabletModal">
+          <img src="img/img-tablet.jpeg" alt="tablet img" width="200" height="200">
+          <div class="projects__item-box">
+            <span class="project__item--destop">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2H0c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2h-4zM4 5h16v11H4V5zm8 14c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/></svg>
+            </span>
+            <span class="project__item--tablet">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M18.5 0h-14C3.12 0 2 1.12 2 2.5v19C2 22.88 3.12 24 4.5 24h14c1.38 0 2.5-1.12 2.5-2.5v-19C21 1.12 19.88 0 18.5 0zm-7 23c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm7.5-4H4V3h15v16z"/></svg>
+            </span>
+          </div>
+        </button>
+      </li>
+      <li class="projects__item projects__mobile">
+        <button type="button" class="projects__btn border-0" data-toggle="modal" data-target="#mobileModal">
+          <img src="img/img-mobile.jpeg" alt="mobile img" width="200" height="200">
+          <div class="projects__item-box">
+            <span class="project__item--destop">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2H0c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2h-4zM4 5h16v11H4V5zm8 14c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/></svg>
+            </span>
+            <span class="project__item--tablet">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M18.5 0h-14C3.12 0 2 1.12 2 2.5v19C2 22.88 3.12 24 4.5 24h14c1.38 0 2.5-1.12 2.5-2.5v-19C21 1.12 19.88 0 18.5 0zm-7 23c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm7.5-4H4V3h15v16z"/></svg>
+            </span>
+            <span class="project__item--mobile">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/></svg>
+            </span>
+          </div>
+        </button>
+      </li>
     </ul>
 
   </div>
@@ -323,34 +336,116 @@
 
 </main>
 
-<footer class="footer d-flex justify-content-between align-items-center container-css">
-  <a href="#" class="footer__logo">
-    <svg width="247" height="210" viewBox="0 0 247 210" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="265" height="210">
-    <rect width="265" height="210" fill="url(#paint0_linear)"/>
-    </mask>
-    <g mask="url(#mask0)">
-    <path opacity="1" fill-rule="evenodd" clip-rule="evenodd" d="M3.03271 220.341C-13.3632 248.782 -3.61579 285.16 24.8042 301.593L149.774 84.8118C166.17 56.3704 156.423 19.9924 128.003 3.55933L3.03271 220.341ZM43.8902 277.869C27.4943 306.31 37.2417 342.688 65.6617 359.121L190.632 142.34C207.028 113.899 197.28 77.5206 168.86 61.0876L43.8902 277.869ZM106.519 415.294C78.0992 398.861 68.3518 362.483 84.7477 334.041L209.718 117.26C238.138 133.693 247.885 170.071 231.489 198.512L106.519 415.294Z" fill="currentcolor"/>
-    </g>
-    <defs>
-    <linearGradient id="paint0_linear" x1="0" y1="0" x2="203.966" y2="257.386" gradientUnits="userSpaceOnUse">
-    <stop stop-color="#6A98F0"/>
-    <stop offset="1" stop-color="#4961DC"/>
-    </linearGradient>
-    <linearGradient id="paint1_linear" x1="-4.92676" y1="3.55933" x2="355.659" y2="217.576" gradientUnits="userSpaceOnUse">
-    <stop stop-color="#6A98F0"/>
-    <stop offset="1" stop-color="#4961DC"/>
-    </linearGradient>
-    </defs>
-    </svg>
-  </a>
-  <p class="footer__text">
-    Made with love by islom
-  </p>
+<footer class="footer">
+  <div class="footer__box d-flex justify-content-between align-items-center container-css">
+    <a href="index.html" class="footer__logo">
+      <svg width="247" height="210" viewBox="0 0 247 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="265" height="210">
+      <rect width="265" height="210" fill="url(#paint0_linear)"/>
+      </mask>
+      <g mask="url(#mask0)">
+      <path opacity="1" fill-rule="evenodd" clip-rule="evenodd" d="M3.03271 220.341C-13.3632 248.782 -3.61579 285.16 24.8042 301.593L149.774 84.8118C166.17 56.3704 156.423 19.9924 128.003 3.55933L3.03271 220.341ZM43.8902 277.869C27.4943 306.31 37.2417 342.688 65.6617 359.121L190.632 142.34C207.028 113.899 197.28 77.5206 168.86 61.0876L43.8902 277.869ZM106.519 415.294C78.0992 398.861 68.3518 362.483 84.7477 334.041L209.718 117.26C238.138 133.693 247.885 170.071 231.489 198.512L106.519 415.294Z" fill="currentcolor"/>
+      </g>
+      <defs>
+      <linearGradient id="paint0_linear" x1="0" y1="0" x2="203.966" y2="257.386" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6A98F0"/>
+      <stop offset="1" stop-color="#4961DC"/>
+      </linearGradient>
+      <linearGradient id="paint1_linear" x1="-4.92676" y1="3.55933" x2="355.659" y2="217.576" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6A98F0"/>
+      <stop offset="1" stop-color="#4961DC"/>
+      </linearGradient>
+      </defs>
+      </svg>
+    </a>
+    <p class="footer__text">
+      Made with love by islom
+    </p>
+  </div>
 </footer>
 
+<!-- MODAL -->
+
+<div class="modal fade" id="desktopModal" data-backdrop="static" data-keyboard="false" tabindex="-1">
+  <div class="modal-dialog mx-auto">
+    <div class="modal-content ">
+      <div class="modal-body">
+        <div class="project-modal__box d-flex">
+          <a target="_blank" href="https://ecommerce-islom.netlify.app" class="project-modal__link">
+            <img class="project-modal__img" src="img/img-ecommerce.png" width="300" height="250" alt="img ecommerce">
+          </a>
+          <a target="_blank" href="https://payapi-islom.netlify.app" class="project-modal__link">
+            <img class="project-modal__img" src="img/img-payapi.png" width="300" height="250" alt="img ecommerce">
+          </a>
+          <a target="_blank" href="https://myteam-islom.netlify.app" class="project-modal__link">
+            <img class="project-modal__img" src="img/img-myteam-1500px.png" width="300" height="250" alt="img ecommerce">
+          </a>
+          <a target="_blank" href="https://exam-2-islom.netlify.app" class="project-modal__link">
+            <img class="project-modal__img" src="img/img-vetclinic.png" width="300" height="250" alt="img ecommerce">
+          </a>
+          <a target="_blank" href="https://telegram-1700px-islom.netlify.app
+          " class="project-modal__link">
+            <img class="project-modal__img" src="img/img-telegram.png" width="300" height="250" alt="img ecommerce">
+          </a>
+          <a target="_blank" href="https://bookmark-1280px-islom.netlify.app" class="project-modal__link">
+            <img class="project-modal__img" src="img/img-bookmark.png" width="300" height="250" alt="img ecommerce">
+          </a>
+          <a target="_blank" href="https://sunnyside-islom.netlify.app" class="project-modal__link">
+            <img class="project-modal__img" src="img/img-sunnyside.png" width="300" height="250" alt="img ecommerce">
+          </a>
+          <a target="_blank" href="https://coffeeroaster-islom.netlify.app" class="project-modal__link">
+            <img class="project-modal__img" src="img/img-coffeeroasters.png" width="300" height="250" alt="img ecommerce">
+          </a>
+          <a target="_blank" href="https://scoot-islom.netlify.app" class="project-modal__link">
+            <img class="project-modal__img" src="img/img-scoot.png" width="300" height="250" alt="img ecommerce">
+          </a>
+          <a target="_blank" href="https://easybank-islom.netlify.app" class="project-modal__link">
+            <img class="project-modal__img" src="img/img-easybank.png" width="300" height="250" alt="img ecommerce">
+          </a>
+          <a target="_blank" href="https://rock-paper-scissors-islom.netlify.app" class="project-modal__link">
+            <img class="project-modal__img" src="img/img-rock-papper.png" width="300" height="250" alt="img ecommerce">
+          </a>
+          <a target="_blank" href="https://26-dars-imtxon-islom.netlify.app" class="project-modal__link">
+            <img class="project-modal__img" src="img/img-pixer.png" width="300" height="250" alt="img ecommerce">
+          </a>
+          <a target="_blank" href="https://minimalist-scss-islom.netlify.app" class="project-modal__link">
+            <img class="project-modal__img" src="img/img-minimalist.png" width="300" height="250" alt="img ecommerce">
+          </a>
+          <a target="_blank" href="https://20-dars-imtxon-islom.netlify.app" class="project-modal__link">
+            <img class="project-modal__img" src="img/img-applewatch.png" width="300" height="250" alt="img ecommerce">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="tabletModal" data-backdrop="static" data-keyboard="false" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="project-modal__box row">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="mobileModal" data-backdrop="static" data-keyboard="false" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="project-modal__box row">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   <script src="js/main.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js.map"></script>
 </body>
 </html>

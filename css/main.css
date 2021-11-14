@@ -373,7 +373,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "____","Arial",sans-serif;
+  font-family: "Arial",sans-serif;
   background-color: #F9F9F9;
   overflow-x: hidden;
 }
@@ -1047,6 +1047,46 @@ body {
 .projects__mobile .projects__item-box .project__item--mobile {
   margin-left: -3px;
   margin-right: 1.5px;
+}
+
+.projects__btn {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 14px;
+}
+
+.project-modal__box {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.project-modal__link {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.project-modal__link .project-modal__img {
+  width: 350px;
+  height: 200px;
+  border: 3px solid #6d83f2;
+  border-radius: 14px;
+}
+
+#desktopModal {
+  background-color: #6a99f04e;
+}
+
+#desktopModal .modal-dialog {
+  max-width: 90% !important;
+}
+
+#desktopModal .modal-content {
+  border-radius: 15px;
 }
 
 .footer {

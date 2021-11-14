@@ -62,3 +62,40 @@
    }
   }
 }
+
+.projects__btn {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 14px;
+}
+
+.project-modal__box {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.project-modal__link {
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  .project-modal__img {
+    width: 350px ;
+    height: 200px ;
+    border: 3px solid $color-heavy-blue;
+    border-radius: 14px;
+  }
+}
+
+#desktopModal {
+  background-color: #6a99f04e;
+
+  .modal-dialog{
+    max-width: 90% !important;
+  }
+
+  .modal-content {
+    border-radius: 15px;
+  }
+}
