@@ -88,14 +88,15 @@
   }
 }
 
-#desktopModal {
-  background-color: #6a99f04e;
+#desktopModal , #tabletModal , #mobileModal {
+  background-color: #8eb3f753;
 
   .modal-dialog{
     max-width: 90% !important;
   }
 
   .modal-content {
+    background-color: #bfcfef;
     border-radius: 15px;
   }
 }

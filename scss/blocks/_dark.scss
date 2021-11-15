@@ -98,3 +98,143 @@
 }
 
 }
+
+.dark.gray {
+
+  .nav__logo, .hero-left__item{
+    svg{
+      color: $color-light-gray !important;
+      fill: $color-light-gray !important;
+    }
+
+    &:hover svg{
+      color: $color-heavy-dark !important;
+      fill: $color-heavy-gray !important;
+    }
+  }
+
+  .nav__link {
+    color: $color-light-gray;
+
+    &:hover {
+      color: $color-heavy-dark;
+    }
+  }
+
+#toggler{
+
+  .layer {
+    background-color: $color-light-gray;
+  }
+
+  .knobs:before {
+    background-color: $color-heavy-gray;
+  }
+
+  .checkbox:checked + .knobs:before {
+    background-color:$color-heavy-dark;
+  }
+}
+
+  .hero-left__resume {
+    color: $color-light-gray;
+    background: $color-heavy-gray;
+  }
+
+  .hero-right__code, .about-bottom__item {
+    background: $color-light-gray;
+
+    pre, .about-bottom__text, .about-bottom__name {
+      color: $color-heavy-gray;
+    }
+
+    .hero-right__list-color {
+      background-color: $color-light-gray;
+    }
+  }
+
+  .favourite__title,.about__title, .skills__title, .projects__title {
+    color: $color-light-gray;
+  }
+
+  .favourite__text-name {
+    color: #6f6f6f;
+  }
+
+  .favourite-img-top {
+    background-color: $color-light-gray;
+
+    svg{
+      color: $color-heavy-gray;
+    }
+  }
+
+  .about__bg {
+    background-image: linear-gradient(134deg, #a9b2bd 0%, #656565 89%);
+  }
+
+  .skills__icons svg {
+    color: $color-light-gray;
+  }
+
+  .language__text {
+    color: rgba(211, 207, 207, 0.975);
+  }
+
+  @include breakpoint-down(700px) {
+
+    .nav__link {
+      background-image: none;
+      background-color: $color-heavy-gray;
+      color: $color-light-gray;
+    }
+
+    .nav__btn--mode, .nav__btn--burger{
+      background-image: none;
+      background-color: $color-heavy-gray;
+
+      svg {
+        color: $color-light-gray;
+      }
+    }
+
+  }
+
+  .projects__item img{
+    border-color: $color-light-gray;
+  }
+
+  .projects__item-box span {
+    color: $color-heavy-gray;
+  }
+
+  .project-modal__img {
+    border-color: $color-heavy-gray;
+  }
+
+  #desktopModal , #tabletModal , #mobileModal {
+    background-color: #3838383c;
+    .modal-content {
+      background-color: $color-light-gray;
+    }
+  }
+
+  .footer {
+    background-image: linear-gradient(134deg, #818489 0%, #656565 89%);
+  }
+
+  .footer__logo {
+    svg{
+      color: $color-light-gray;
+    }
+
+    &:hover svg {
+      color: $color-heavy-gray;
+    }
+  }
+
+  .footer__text {
+    color: $color-light-gray;
+  }
+
+}

@@ -98,5 +98,42 @@
     }
   }
 
+  .projects__item img{
+    border-color: $color-heavy-yellow;
+  }
+
+  .projects__item-box span {
+    color: $color-heavy-yellow;
+  }
+
+  .project-modal__img {
+    border-color: $color-heavy-yellow;
+  }
+
+  #desktopModal , #tabletModal , #mobileModal {
+    background-color: #feeebf37;
+
+    .modal-content {
+      background-color: $color-light-yellow;
+    }
+  }
+
+  .footer {
+    background-image: linear-gradient(134deg, #ffdd78 0%, #ffd285 99%);
+  }
+
+  .footer__logo {
+    svg{
+      color: $color-heavy-yellow;
+    }
+
+    &:hover svg {
+      color: #d58700;
+    }
+  }
+
+  .footer__text {
+    color: $color-heavy-yellow;
+  }
 
 }
