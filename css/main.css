@@ -376,6 +376,7 @@ body {
   font-family: "Arial",sans-serif;
   background-color: #F9F9F9;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -1827,7 +1828,7 @@ body {
 }
 
 .dark {
-  background-color: #191919;
+  background-color: #191919 !important;
 }
 
 .dark .nav {
