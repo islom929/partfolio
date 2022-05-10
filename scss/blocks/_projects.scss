@@ -1,4 +1,5 @@
 .projects {
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 
@@ -8,18 +9,16 @@
 }
 
 .projects__item {
+  width: 30%;
   position: relative;
 
-  img{
-    width: 250px ;
-    height: 250px ;
-    object-fit: cover;
-    border: 3px solid $color-heavy-blue;
-    border-radius: 14px;
+  button {
+    width: 100%;
   }
 }
 
 .projects__item-box {
+  width: 100%;
   background-color: #fff;
   border-radius: 10px;
   padding: 3px 6px;
@@ -29,27 +28,10 @@
   bottom: 3px;
   right: 3px;
 
-  span {
-    width: 23px !important;
-    height: 23px !important;
-    color: $color-heavy-blue;
-    margin: 0 3px;
+  h3 {
+    width: 100%;
+    text-align: center;
   }
-}
-
-.project__item--destop svg{
-  width: 25px;
-  height: 25px;
-}
-
-.project__item--tablet svg{
-  width: 22px;
-  height: 22px;
-}
-
-.project__item--mobile svg{
-  width: 21px;
-  height: 22px;
 }
 
 .projects__mobile {
