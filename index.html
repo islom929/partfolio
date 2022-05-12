@@ -116,19 +116,19 @@
         </ol>
         <ul class="hero-right__list-color position-absolute list-unstyled d-flex mb-0">
           <li class="hero-right__item-color">
-            <button type="button" class="hero-right__btn-color hero-right__btn--blue" onclick="colorWhiteBlue()"></button>
+            <button type="button" class="hero-right__btn-color hero-right__btn--blue" data-color="blue"></button>
           </li>
           <li class="hero-right__item-color">
-            <button type="button" class="hero-right__btn-color hero-right__btn--pink" onclick="changeColorPink()"></button>
+            <button type="button" class="hero-right__btn-color hero-right__btn--pink" data-color="pink"></button>
           </li>
           <li class="hero-right__item-color">
-            <button type="button" class="hero-right__btn-color hero-right__btn--gray" onclick="changeColorGray()"></button>
+            <button type="button" class="hero-right__btn-color hero-right__btn--gray" data-color="gray"></button>
           </li>
           <li class="hero-right__item-color">
-            <button type="button" class="hero-right__btn-color hero-right__btn--yellow" onclick="changeColorYellow()"></button>
+            <button type="button" class="hero-right__btn-color hero-right__btn--yellow" data-color="yellow"></button>
           </li>
           <li class="hero-right__item-color">
-            <button type="button" class="hero-right__btn-color hero-right__btn--green" onclick="changeColorGreen()"></button>
+            <button type="button" class="hero-right__btn-color hero-right__btn--green" data-color="green"></button>
           </li>
         </ul>
       </div>
@@ -207,7 +207,7 @@
 
     <ul class="projects__list list-unstyled d-flex">
       <li class="projects__item projects__desktop">
-        <button type="button" class="projects__btn border-0" data-toggle="modal" data-target="#desktopModal">
+        <button type="button" class="projects__btn border-0 desktop-btn" data-toggle="modal" data-target="#desktopModal">
           <div class="projects__item-box">
             <h3>
               Project for desktop devices
@@ -216,7 +216,7 @@
         </button>
       </li>
       <li class="projects__item projects__tablet" >
-        <button type="button" class="projects__btn border-0" data-toggle="modal" data-target="#tabletModal">
+        <button type="button" class="projects__btn border-0 tablet-btn" data-toggle="modal" data-target="#tabletModal">
           <div class="projects__item-box">
             <h3>
               Project for tablet devices
@@ -225,7 +225,7 @@
         </button>
       </li>
       <li class="projects__item projects__mobile">
-        <button type="button" class="projects__btn border-0" data-toggle="modal" data-target="#mobileModal">
+        <button type="button" class="projects__btn border-0 mobile-btn" data-toggle="modal" data-target="#mobileModal">
           <div class="projects__item-box">
             <h3>
               Project for mobile devices
@@ -271,139 +271,11 @@
 
 <!-- MODAL -->
 
-<div class="modal fade" id="desktopModal" tabindex="-1">
-  <div class="modal-dialog mx-auto">
-    <div class="modal-content ">
-      <div class="modal-body">
-        <div class="project-modal__box d-flex">
-          <a target="_blank" href="https://ecommerce-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-ecommerce.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://vue-project-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/vue-prakrika.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://pressauz.herokuapp.com/" class="project-modal__link">
-            <img class="project-modal__img" src="/img/pressa.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://macbroo-islom-1440px.netlify.app/" class="project-modal__link">
-            <img class="project-modal__img" src="/img/macbro-desktop.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://chevrolet-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/chevrolet.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://payapi-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-payapi.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://myteam-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-myteam-1500px.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://vet-clinic-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-vetclinic.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://telegram-1700px-islom.netlify.app
-          " class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-telegram.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://bookmark-1280px-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-bookmark.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://sunnyside-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-sunnyside.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://coffeeroaster-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-coffeeroasters.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://scoot-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-scoot.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://easybank-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-easybank.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://rock-paper-scissors-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-rock-papper.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://26-dars-imtxon-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-pixer.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://minimalist-scss-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-minimalist.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://20-dars-imtxon-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-applewatch.png" width="300" height="250" alt="img ecommerce">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<div class="modal fade" id="desktopModal" tabindex="-1"></div>
+<div class="modal fade" id="tabletModal" tabindex="-1" ></div>
+<div class="modal fade" id="mobileModal" tabindex="-1"></div>
 
-<div class="modal fade" id="tabletModal" tabindex="-1" >
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <div class="project-modal__box d-flex">
-          <a target="_blank" href="https://ecommerce-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-ecommerce.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://pressauz.herokuapp.com/" class="project-modal__link">
-            <img class="project-modal__img" src="/img/pressa.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://payapi-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-payapi.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://myteam-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-myteam-1500px.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://minimalist-scss-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-minimalist.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://bookmark-1280px-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-bookmark.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://sunnyside-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-sunnyside.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://coffeeroaster-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-coffeeroasters.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://rock-paper-scissors-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-rock-papper.png" width="300" height="250" alt="img ecommerce">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="mobileModal" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <div class="project-modal__box d-flex">
-          <a target="_blank" href="https://ecommerce-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-ecommerce.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://pressauz.herokuapp.com/" class="project-modal__link">
-            <img class="project-modal__img" src="/img/pressa.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://payapi-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-payapi.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://minimalist-scss-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-minimalist.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://sunnyside-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-sunnyside.png" width="300" height="250" alt="img ecommerce">
-          </a>
-          <a target="_blank" href="https://coffeeroaster-islom.netlify.app" class="project-modal__link">
-            <img class="project-modal__img" src="/img/img-coffeeroasters.png" width="300" height="250" alt="img ecommerce">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+  <script src="js/info.js"></script>
   <script src="js/main.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
